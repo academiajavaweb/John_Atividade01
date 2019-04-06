@@ -39,8 +39,10 @@ public class NewServlet extends HttpServlet {
             out.println("<title>Servlet NewServlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1> Nome: " + getParameter("John") + "</h1>");
-            out.println("<h1> Idade: " + getParameter("18") + "</h1>");
+            out.println("<h1> Nome: " + request.getParameter("John") + "</h1>");
+            out.println("<h1> Sobrenome: " + request.getParameter("Robert") + "</h1>");
+            out.println("<h1> Endereço: " + request.getParameter("rua dos limoeiros 118") + "</h1>");
+            out.println("<h1> Telefone: " + request.getParameter("991002451") + "</h1>");
             out.println("<h1>Servlet NewServlet at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
